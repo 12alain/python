@@ -23,7 +23,7 @@ jobs:
       - name: dowload data 
         run: |
           python -c "from chargement import download_data;  print(download_data())"
-      - name: Train and Evaluate Model
+      - name: nettoyage de donne
         run: |
           python model.py
          
