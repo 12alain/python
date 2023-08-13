@@ -1,5 +1,7 @@
 from chargement import download_data
+
 import os 
+
 def missing_values_and_duplicated():
   datas=download_data()
   for i in datas.columns:
