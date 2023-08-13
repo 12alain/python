@@ -1,4 +1,9 @@
-import pandas as pd   
+import urllib.request 
+import pandas as pd
 def download_data():
-        df=pd.read_csv('./data/billets.csv',sep=";")
+        url = ('https://raw.githubusercontent.com/12alain/python/master/data/billets.csv')  # URL du fichier à télécharger
+        filename, headers = urllib.request.urlretrieve(url, "billets.csv")
+        df=pd.read_csv(filename,sep=";")
         return df
+download_data()
+print(download_data())
