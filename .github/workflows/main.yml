@@ -26,5 +26,8 @@ jobs:
       - name: nettoyage de donnee
         run: |
          python -c "from clean_data import missing_values_and_duplicated; missing_values_and_duplicated()"
+      - name: Removal of unnecessary attributes.
+        run: |
+         python -c "from remove_attributes import remove_attribut; print(remove_attribut())"   
          
       
