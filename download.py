@@ -6,3 +6,4 @@ def download_data():
         df=pd.read_csv(filename,sep=";")
         return df
 
+print(download_data())
