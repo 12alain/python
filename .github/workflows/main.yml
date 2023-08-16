@@ -23,6 +23,7 @@ jobs:
       - name: dowload data 
         run: |
           python -c "from chargement import download_data; print(download_data())"
+          cat download_data()
       - name: nettoyage de donnee
         run: |
          python -c "from clean_data import missing_values_and_duplicated; print(missing_values_and_duplicated())"
