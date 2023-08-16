@@ -1,5 +1,5 @@
 from download import download_data
-def remove_attributes():
+def remove_attribut():
     # Load the data using the download_data() function
     data = download_data()
 
