@@ -12,5 +12,3 @@ def missing_values_and_duplicated():
     # Traitement des valeurs dupliquées
     datas.drop_duplicates(inplace=True)
     return datas
-missing_values_and_duplicated()
-print(missing_values_and_duplicated())
