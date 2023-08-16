@@ -30,7 +30,7 @@ jobs:
         run: |
          python -c "from remove_attributes import remove_attribut; print(remove_attribut())" 
 
-       - name: Create new attributes.
+      - name: Create new attributes.
         run: |
          python -c "from new_attribut import new_tribut(); print(new_tribut())" 
         
