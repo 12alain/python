@@ -5,5 +5,4 @@ def download_data():
         filename, headers = urllib.request.urlretrieve(url, "billets.csv")
         df=pd.read_csv(filename,sep=";")
         return df
-download_data()
-print(download_data())
+
