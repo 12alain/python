@@ -32,7 +32,7 @@ jobs:
 
       - name: Create new attributes.
         run: |
-         python -c "from new_attribut import new_tribut; print(new_tribut())" 
+         python -c "from new_attribut import new_tribut; new_tribut()" 
         
          
       
