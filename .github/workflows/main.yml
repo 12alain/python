@@ -33,6 +33,15 @@ jobs:
       - name: Create new attributes.
         run: |
          python -c "from new_attribut import new_tribut; print(new_tribut())" 
-        
-         
+
+      - name: Store the cleaned dataset in an SQLite database.
+        run: |
+         python -c "from data_connect import connexion; connexion()"  
+
+       - name: Upload Cleaned Data Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Store data 
+          path: ./datas.db  
       
+    
